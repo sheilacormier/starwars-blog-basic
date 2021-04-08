@@ -10,14 +10,24 @@ export const Navbar = () => {
 						src="http://pngimg.com/uploads/star_wars_logo/star_wars_logo_PNG28.png"
 						height="70"
 						className="d-inline-block align-top"
-						alt=""
+						alt="starwars"
 					/>
 				</span>
 			</Link>
 			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Favorites</button>
-				</Link>
+				<button
+					className="btn btn-warning dropdown-toggle"
+					type="button"
+					id="dropdownMenuButton"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false">
+					Favorites{" "}
+					<span className="badge badge-secondary">
+						{/* return actions.countFavorites
+						 */}
+					</span>
+				</button>
 			</div>
 		</nav>
 	);
